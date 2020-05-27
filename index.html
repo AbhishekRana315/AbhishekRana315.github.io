@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<script src="https://kit.fontawesome.com/0010ef46e3.js" crossorigin="anonymous"></script>
+<style>
+body{
+margin:0;
+font-family: arial;
+padding:0;
+}
+
+img{
+  width:20%;
+  height:20%;
+}
+#top_block{
+background-color:black;
+height: 1000px;
+width:100%;
+}
+
+.top_nav a{
+
+
+}
+.top_nav a{
+display: inline-block;
+float:left;
+font-size: 20px;
+padding:40px;
+
+}
+.top_nav ul{
+  list-style-type: none;
+  float:right;
+}
+.top_nav ul li{
+  display:inline-block;
+  background-color:black;
+}
+.top_nav ul li a{
+  display: block;
+  color:white;
+  padding: 15px;
+  font-size: 20px;
+  margin:5px;
+  text-decoration: none;
+
+}
+.top_nav ul li a:last-child{
+  margin-right: 25px;
+}
+.top_nav ul li a:hover{
+  border-bottom: 2px solid white;
+}
+.active{
+  border-bottom: 2px solid #FF0077;
+}
+.black_col{
+  margin:0px 80px;
+}
+.top_nav a span{
+  position:absolute;
+  top:50%
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-transform: uppercase;
+  font-family: arial;
+  letter-spacing:5px;
+  margin:0;
+  margin-top:7px;
+  margin-left:65px;
+  padding: 0;
+  color:transparent;
+
+}
+.top_nav a span:before{
+  content: attr(data);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%
+  height:100%;
+  color:white;
+  overflow: hidden;
+  border-right: 1px solid white;
+  animation: type 10s linear infinite;
+  white-space: nowrap;
+}
+#type h2 span{
+  position:absolute;
+  top:50%
+  left:50%;
+  font-size: 48px;
+  transform:translate(-50%,-50%);
+  text-transform: uppercase;
+  font-family: arial;
+  letter-spacing:5px;
+  margin:0;
+  padding: 0;
+  color:transparent;
+}
+#type h2 span:before{
+  content: attr(data-text);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%
+  height:100%;
+  color:white;
+  overflow: hidden;
+  border-right: 1px solid white;
+  animation: type 10s linear infinite;
+  white-space: nowrap;
+}
+@keyframes type {
+  0%
+  {
+    width:0;
+  }
+  50%{
+    width:100%;
+  }
+  100%{
+    width:0;
+  }
+}
+#top_cont{
+  margin-top: 15px;
+  border-top: 4px solid #FF0077;
+  clear:both;
+  text-align: center;
+  color:white;
+  width:100%;
+}
+#top_cont h1{
+  border-top: 2px solid #FF0077;
+  border-bottom: 2px solid #FF0077;
+  font-size: 45px;
+}
+#top_cont p{
+  font-size: 28px;
+}
+.info{
+  margin-top: 0;
+  background-color: #171717;
+  height:900px;
+}
+.info_cont{
+  text-align: center;
+}
+.info_cont h1{
+  margin-top: 30px;
+  display:inline-block;
+  color:white;
+  font-size: 45px;
+  border-top: 2px solid #FF0077;
+  border-bottom: 2px solid #FF0077;
+}
+i{
+  color:white;
+  margin: 10px 20px;
+}
+.deg_info{
+  color: white;
+  font-size: 30px;
+}
+.adjust_left{
+  margin-left: 75px;
+  font-size: 20px;
+  width:75%;
+}
+#skls{
+  background-color: grey;
+  height:100%;
+  width:100%;
+  text-align: center;
+}
+#skls h1{
+  color:white;
+
+  border-top: 2px solid #FF0077;
+  border-bottom: 2px solid #FF0077;
+
+}
+.fs{
+  font-size: 38px;
+}
+footer{
+  background-color:black;
+  height:100%;
+  width:100%;
+  color:white;
+}
+footer i{
+  color:white;
+  padding:15px;
+  margin:15px;
+}
+.fot{
+  width:80%;
+  margin:0 100px;
+}
+.fot span{
+  padding:15px;
+  font-size: 24px;
+  margin:15px;
+}
+footer i:hover{
+  color:#FF0077;
+}
+@media (max-width:900px){
+  .top_nav ul li a{
+    font-size: 15px;
+    padding: 10px;
+  }
+
+}
+@media (max-width:700px){
+  .top_nav ul li a{
+    font-size: 15px;
+    padding: 5px;
+  }
+  .top_nav a{
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="top_block">
+  <div class="black_col">
+<div class="top_nav">
+  <a href="profile.html"><span data="Abhishek Rana">Abhishek Rana</span></a>
+  <ul>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="skillss.html">Skills</a></li>
+    <li><a class="active" href="index.html">About</a></li>
+
+  </ul>
+</div>
+<div id="top_cont">
+  <div>
+    <div>
+    <img src="Profile.jpeg" alt="Profile"></div>
+    <div id="type">
+      <h2 style="font-size:300%">I AM A</h2><h2><span data-text="Web Developer">Web Developer</span></h2></div>
+      <div style="margin-top:60px">
+       <h1 style="display:inline-block">My Introduction</h1></div>
+  <p>Hey Peeps! I am Abhishek, a resident of Nadiad, Gujarat currently in the final year of Engineering, specializing in Information Technology. Owing to my education, my inclination has been towards software development, mainly Full Stack Web Development, Native Application Development and Competitive Programming. My belief is in maximising spreading of knowledge, which has led me in contributing to many open source Projects. A keen interest in psychology and the human brain working has pushed me to into Mentoring, Teaching, Giving Motivational speeches, Reading self improvement books. Exploring nature, Travelling, Learning new things, Writing blogs and Spending time with my family are my leisure interests.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="info">
+  <div class="black_col">
+    <div class="info_cont">
+      <h1>My Educational Qualification</h1>
+    </div>
+    <div class="deg_info">
+      <p><i class="fas fa-graduation-cap"></i>Bachelor's Degree</p>
+      <p class="adjust_left">July 2016 - May 2020</p>
+      <p class="adjust_left">G H Patel College Of Engineering & Technology</p>
+      <p class="adjust_left">I'm currently pursuing 4th year Undergraduate B.E degree in Information Technology stream from G H Patel College of Engineering & Technology, affiliated to Gujarat Technical University.</p>
+    <p><i class="fas fa-university"></i>Higher Secondary</p>
+      <p class="adjust_left">May 2014 - April 2016</p>
+      <p class="adjust_left">Knowledge Highschool</p>
+    <p class="adjust_left">I had completed my Secondary schooling from Knowledge Highschool, affiliated to Gujarat Board of Secondary Education</p>
+    <p><i class="fas fa-school"></i>Secondary</p>
+    <p class="adjust_left">May 2013</p>
+    <p class="adjust_left">Shree Swami Vivekanand Vidhya Vihar</p>
+    <p class="adjust_left">I had completed my Secondary schooling from SSVVV, affiliated to Gujarat Board of Secondary Education.</p>
+
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="fot">
+    <i class="fab fa-linkedin fs"></i><i class="fab fa-twitter fs"></i><i class="fab fa-github fs"></i>
+    <span style="float:right">© 2020 Abhishek Rana. All Right Reserved.</span>
+    <p style="text-align:center; font-size:24px">Made with<i class="fas fa-heart col"></i>in India</p>
+  </div>
+</footer>
+
+</body>
+</html>

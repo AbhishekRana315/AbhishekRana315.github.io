@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skills</title>
+<script src="https://kit.fontawesome.com/0010ef46e3.js" crossorigin="anonymous"></script>
+<style>
+body{
+  margin:0;
+  padding:0;
+  font-family: arial;
+}
+i{
+  color:#FF0077;
+  height:15px;
+}
+#top_block{
+background-color:black;
+height: 1000px;
+width:100%;
+
+}
+.top_nav a{
+display: inline-block;
+float:left;
+font-size: 20px;
+padding:40px;
+
+}
+.top_nav ul{
+  list-style-type: none;
+  float:right;
+}
+.top_nav ul li{
+  display:inline-block;
+  background-color:black;
+
+}
+.top_nav ul li a{
+  display: block;
+  color:white;
+  padding: 15px;
+  font-size: 20px;
+  margin:5px;
+  text-decoration: none;
+
+}
+.top_nav ul li a:last-child{
+  margin-right: 25px;
+}
+.top_nav ul li a:hover:not(.active){
+  border-bottom: 2px solid white;
+}
+.top_nav a span{
+  position:absolute;
+  top:50%
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-transform: uppercase;
+  font-family: arial;
+  letter-spacing:5px;
+  margin:0;
+  margin-top:7px;
+  margin-left:65px;
+  padding: 0;
+  color:transparent;
+
+}
+.top_nav a span:before{
+  content: attr(data);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%
+  height:100%;
+  color:white;
+  overflow: hidden;
+  border-right: 1px solid white;
+  animation: type 10s linear infinite;
+  white-space: nowrap;
+}
+@keyframes type {
+  0%
+  {
+    width:0;
+  }
+  50%{
+    width:100%;
+  }
+  100%{
+    width:0;
+  }
+}
+.black_col{
+  margin:0px 80px;
+}
+#skls_cont{
+  margin-top: 50px;
+  border-top: 4px solid #FF0077;
+  clear:both;
+  text-align: center;
+  color:white;
+}
+#skls_cont h1{
+  margin-top: 60px;
+  display: inline-block;
+  border-top:2px solid #FF0077;
+  border-bottom:2px solid #FF0077;
+  font-size: 50px;
+}
+.wrapper{
+  width:800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.wrapper h2{
+  text-align: left;
+}
+.line{
+  height: 25px;
+  min-width: 800px;
+  margin: 0 auto 10px;
+  line-height: 25px;
+  font-size: 14px;
+  color:#fff;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+.line::before{
+  content: '';
+  width:100%;
+  position: absolute;
+  left: 0;
+  height: 25px;
+  top:0;
+  z-index: 0;
+  background: #d2d6d7;
+}
+.line::after{
+  content: '';
+  width:100%;
+  position: absolute;
+  left: 0;
+  display: block;
+  transition: 0.8s;
+  animation: animate 1 4s;
+  height: 25px;
+  top:0;
+  z-index: 1;
+  background:#FF0077;
+}
+.line1::after{
+  max-width:90%;
+}
+.line2::after{
+  max-width:80%;
+}
+.line3::after{
+  max-width:80%;
+}
+.line4::after{
+  max-width:85%;
+}
+.line5::after{
+  max-width:75%;
+}
+.line6::after{
+  max-width:75%;
+}
+.line7::after{
+  max-width:65%;
+}
+@keyframes animate {
+  0%{
+    width:0;
+  }
+  100%{
+    width:100%;
+  }
+}
+#info_c{
+  margin-top: 0;
+  display: block;
+  text-align:center;
+  color:white;
+  height:650px;
+  background-color:#171717;
+
+}
+#info_cer{
+  margin:0px 80px;
+  padding-top: 60px;
+}
+#info_cer h1{
+  text-align: center;
+  color: white;
+  display: inline;
+  border-bottom: 2px solid #FF0077;
+  border-top: 2px solid #FF0077;
+  font-size: 50px;
+  margin-bottom: 30px;
+
+}
+#info_cer p{
+  font-size: 24px;
+  text-align: left;
+}
+
+.fs{
+  font-size: 38px;
+}
+.active{
+  border-bottom: 2px solid #FF0077;
+}
+.colr{
+  color:#FF0077;
+}
+footer{
+  background-color:black;
+  height:100%;
+  width:100%;
+  color:white;
+}
+footer i{
+  color:white;
+  padding:15px;
+  margin:15px;
+}
+footer i:hover{
+  color:#FF0077;
+}
+.fot{
+  width:80%;
+  margin:0 100px;
+}
+.fot span{
+  padding:15px;
+  font-size: 24px;
+  margin:15px;
+}
+@media (max-width:900px){
+  .top_nav ul li a{
+    font-size: 15px;
+    padding: 10px;
+  }
+
+}
+@media (max-width:700px){
+  .top_nav ul li a{
+    font-size: 15px;
+    padding: 5px;
+  }
+  .top_nav a{
+    display: none;
+  }
+}
+
+</style>
+</head>
+<body>
+  <div id="top_block">
+    <div class="black_col">
+  <div class="top_nav">
+
+    <a href="profile.html"><span data="Abhishek Rana">Abhishek Rana</span></a>
+      <ul>
+      <li><a href="contact.html" >Contact</a></li>
+      <li><a href="skillss.html" class="active">Skills</a></li>
+        <li><a href="index.html">About</a></li>
+
+    </ul>
+  </div>
+    <div id="skls_cont">
+      <h1> My Skills</h1>
+
+      <div class="wrapper">
+        <h2>Html (90%)</h2>
+       <div class="line line1"></div>
+       <h2>Css (80%)</h2>
+      <div class="line line2"></div>
+      <h2>Javascript (80%)</h2>
+     <div class="line line3"></div>
+     <h2>Bootstrap (85%)</h2>
+    <div class="line line4"></div>
+    <h2>Php (75%)</h2>
+   <div class="line line5"></div>
+   <h2>Python (75%)</h2>
+  <div class="line line6">75%</div>
+  <h2>MongoDB (65%)</h2>
+ <div class="line line7">65%</div>
+
+    </div>
+</div>
+</div>
+</div>
+<div id="info_c">
+  <div id="info_cer">
+    <h1> My Certificates</h1>
+    <br/>
+    <br/>
+    <p>A specializtion in <span class="colr">Web Design For Everybody</span> offered by University of Michigan on Coursera</p>
+    <p>It includes:</p>
+    <ul style="text-align:left">
+      <li style="font-size:20px">Introduction to HTML5</li>
+      <li style="font-size:20px">Introduction to CSS3</li>
+      <li style="font-size:20px">Interactivity with Javascript</li>
+      <li style="font-size:20px">Advance Styling with Responsive Design</li>
+      <li style="font-size:20px">Web Design for Everybody Capstone</li>
+    </ul>
+    <p><span class="colr">Python For Everybody</span> offered by University of Michigan.</p>
+    <p><span class="colr">Python Data Structure</span> offered by University of Michigan.</p>
+    <p><span class="colr">Using Python To Access Web Data</span> offered by University of Michigan.</p>
+    <p><span class="colr">What is Data Science</span> offered by IBM</p>
+  </div>
+</div>
+  <footer>
+    <div class="fot">
+      <i class="fab fa-linkedin fs"></i><i class="fab fa-twitter fs"></i><i class="fab fa-github fs"></i>
+      <span style="float:right">© 2020 Abhishek Rana. All Right Reserved.</span>
+      <p style="text-align:center; font-size:24px">Made with<i class="fas fa-heart col"></i>in India</p>
+    </div>
+  </footer>
+  </body>
+  </html>
